@@ -67,3 +67,4 @@ There are multiple ways to contribute:
 [Pull Requests]: https://github.com/nVotes/juvenal/pulls
 [source code changes]: https://github.com/nVotesOrg/juvenal/pulls
 [submit bugs]: https://github.com/nVotes/juvenal/issues
+[Helios Voting]: https://heliosvoting.org/
