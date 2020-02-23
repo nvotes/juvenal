@@ -1,0 +1,54 @@
+{
+  "name": "juvenal",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://nvotes.com/",
+  "dependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.7",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-named-asset-import": "^0.3.6",
+    "husky": "^3.0.9",
+    "juvenal-lib": "file:../juvenal-lib",
+    "lint-staged": "^9.4.2",
+    "prettier": "^1.19.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0",
+    "typescript": "^3.7.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start --verbose",
+    "build": "react-app-rewired build --verbose",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "clean": "rm -rf build/",
+    "doc": "./node_modules/typedoc/bin/typedoc --out build/doc/ src/",
+    "convert": "convert -background none src/logo.svg -define icon:auto-resize public/favicon.ico; convert -background none -size 192x192 src/logo.svg public/logo192.png; convert -background none -size 512x512 src/logo.svg public/logo512.png",
+    "coverage": "react-app-rewired test --coverage",
+    "lint:fix": "tsc --noEmit && node node_modules/eslint/bin/eslint.js '{src,tests}/**/*.{js,ts}' --fix",
+    "lint:check": "tsc --noEmit && node node_modules/eslint/bin/eslint.js '{src,tests}/**/*.{js,ts}' --quiet"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-app-rewired": "^2.1.5",
+    "worker-loader": "^2.0.0",
+    "typedoc": "0.16.10"
+  }
+}

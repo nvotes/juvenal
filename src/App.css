@@ -1,0 +1,214 @@
+a {
+  color: #09d3ac;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html, body {
+  background-color: #282c34;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  padding: calc(2vmin);
+  height: 8vmin;
+  justify-content: space-between;
+}
+
+.App-header > .Open-source {
+  display: block;
+  padding-top: 1vmin;
+}
+
+.Big-button {
+  display: block;
+  padding: 1.5vmin;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition-property: transform,background-color;
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(.07, .95, 0,1)
+}
+
+.Big-button:hover {
+  transform: scale(1.0625);
+  text-decoration: none;
+}
+
+.Big-button:active {
+  transform: scale(.9375)
+}
+
+.App-header > .App-logo > .Name {
+  font-size: calc(10px + 3vmin);
+}
+
+.App-header > .App-logo > .Powered-by, .App-logo > .Powered-by a {
+  font-size: calc(6px + 1vmin);
+  color: white;
+}
+
+.App-header > .App-logo > .Powered-by a {
+  font-weight: bold;
+}
+
+.Body {
+  display: flex;
+  flex-direction: row;
+}
+
+.Election-record {
+  width: calc(50% - 5px);
+  margin-left: 5px;
+  height: 85vh;
+}
+
+.Verification-results {
+  width: 50%;
+}
+
+.Verifier-output {
+  padding: calc(2vmin);
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 69.6vh;
+  display: block;
+}
+
+.Verifier-output.Empty {
+  text-align: center;
+  height: 72.6vh;
+  padding: 4vmax 5vmax 0 5vmax;
+}
+
+.Verifier-output.Empty h3 {
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+.Verifier-output.Empty p {
+  line-height: 1.5em;
+}
+
+.Verifier-output.Empty a {
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 1vh;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  border: 0;
+}
+
+.Run-button {
+  background-color: rgb(37, 104, 192);
+}
+
+.Run-button:hover {
+  background-color: rgb(30, 78, 141);
+}
+
+.Stop-button {
+  background-color: rgb(141, 19, 19);
+}
+
+.Stop-button:hover {
+  background-color: rgb(83, 12, 12);
+}
+
+@keyframes flash {
+  from {
+    color: rgb(255, 238, 0);
+    opacity: 0;
+  }
+  to {
+    color: auto;
+    opacity: 1;
+  }
+}
+
+.Verification {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: rgb(199, 199, 199);
+  font-size: calc(2.5vmin);
+  animation-name: flash;
+  animation-duration: 1s;
+  height: auto;
+}
+
+.Verification .Status {
+  min-width: 5vh;
+  width: 8%;
+}
+
+.Verification .Title {
+  width: 92%;
+  padding-bottom: 2vmin;
+}
+
+
+.Verification.Fail .Status, .Global-status .Fail {
+  min-width: 5vh;
+  color: rgb(226, 34, 34);
+}
+
+.Verification.Ok .Status, .Global-status .Ok {
+  min-width: 5vh;
+  color: rgb(0, 146, 0);
+}
+
+.Bottom {
+  width: 100%;
+  height: 0;
+}
+
+.Global-status {
+  color: white;
+  padding: 2vh;
+  text-align: center;
+}
+
+.Global-status > span {
+  margin: 0.5em;
+}
+
+@media all and (max-width: 600px) {
+  .App-header > .Open-source {
+    padding-top: 0;
+  }
+
+  .Body {
+    flex-direction: column;
+  }
+
+  .Election-record {
+    width: auto;
+    margin: 5px;
+    height: 10vh;
+  }
+  
+  .Verification-results {
+    width: 100%;
+  }
+}

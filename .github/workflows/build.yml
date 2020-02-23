@@ -1,0 +1,41 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - run: yarn global add typescript
+    - run: yarn
+    - run: yarn lint:check
+    - run: yarn build
+    - run: | # the touch is needed so that underscored files work for GitHub Pages
+        yarn doc
+        touch ./build/doc/.nojekyll
+    - run: yarn coverage
+
+    # update code coverage in codecov.io
+    - uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }} # required, use a github secret for that
+        fail_ci_if_error: true              # optional (default=false)
+
+    # publish documentation in gh-pages branch
+    - name: Deploy doc
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        publish_dir: ./build/
