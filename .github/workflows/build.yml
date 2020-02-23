@@ -26,7 +26,7 @@ jobs:
     - run: yarn lint:check
     - run: | # the touch is needed so that underscored files work for GitHub Pages
         yarn doc
-        touch ./build/doc/.nojekyll
+        touch ./build/.nojekyll
     - run: yarn coverage
       env:
         CI: true
