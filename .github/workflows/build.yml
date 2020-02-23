@@ -20,8 +20,10 @@ jobs:
 
     - run: yarn global add typescript
     - run: yarn
-    - run: yarn lint:check
     - run: yarn build
+
+    # do the lint after build, because build also builds juvenal-lib
+    - run: yarn lint:check
     - run: | # the touch is needed so that underscored files work for GitHub Pages
         yarn doc
         touch ./build/doc/.nojekyll
