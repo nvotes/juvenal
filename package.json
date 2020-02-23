@@ -1,8 +1,9 @@
 {
   "name": "juvenal",
+  "description": "juvenal is an universal election verifier for the web browser. It is voting system agnostic, and allows anyone to verify an election record of multiple voting systems. The proof verifications are implemented in juvenal-lib.",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nvotes.com/",
+  "homepage": "./",
   "dependencies": {
     "@types/jest": "24.9.0",
     "@types/node": "12.12.28",

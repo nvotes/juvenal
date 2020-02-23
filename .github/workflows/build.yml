@@ -37,8 +37,8 @@ jobs:
         token: ${{ secrets.CODECOV_TOKEN }} # required, use a github secret for that
         fail_ci_if_error: true              # optional (default=false)
 
-    # publish documentation in gh-pages branch
-    - name: Deploy doc
+    # publish gh-pages branch
+    - name: Deploy gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
