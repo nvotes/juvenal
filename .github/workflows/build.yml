@@ -28,6 +28,8 @@ jobs:
         yarn doc
         touch ./build/doc/.nojekyll
     - run: yarn coverage
+      env:
+        CI: true
 
     # update code coverage in codecov.io
     - uses: codecov/codecov-action@v1
