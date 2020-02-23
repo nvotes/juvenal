@@ -6137,9 +6137,9 @@ jsx-ast-utils@^2.2.1, jsx-ast-utils@^2.2.3:
     array-includes "^3.0.3"
     object.assign "^4.1.0"
 
-"juvenal-lib@git+https://git@github.com/nVotes/juvenal-lib.git#master":
+"juvenal-lib@https://github.com/nVotes/juvenal-lib.git#master":
   version "0.1.0"
-  resolved "git+https://git@github.com/nVotes/juvenal-lib.git#65425d959fcdbcb4e0842aaae1ce7266cba7611a"
+  resolved "https://github.com/nVotes/juvenal-lib.git#65425d959fcdbcb4e0842aaae1ce7266cba7611a"
   dependencies:
     "@types/node" "12.12.28"
     ajv "6.12.0"
