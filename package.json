@@ -5,11 +5,11 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
-    "@types/jest": "24.9.0",
+    "@types/jest": "25.2.1",
     "@types/node": "12.12.28",
     "@types/react": "16.9.22",
     "@types/react-dom": "16.9.5",
-    "babel-loader": "8.0.6",
+    "babel-loader": "8.1.0",
     "babel-plugin-named-asset-import": "0.3.6",
     "husky": "3.1.0",
     "juvenal-lib": "https://github.com/nVotes/juvenal-lib.git#master",
@@ -17,7 +17,7 @@
     "prettier": "1.19.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "3.4.1",
     "typescript": "3.8.2"
   },
   "scripts": {
@@ -40,6 +40,12 @@
       "pre-commit": "lint-staged"
     }
   },
+  "lint-staged": {
+    "{src,tests}/**/*.{js,ts}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -54,7 +60,12 @@
   },
   "devDependencies": {
     "react-app-rewired": "2.1.5",
-    "typedoc": "0.16.10",
+    "typedoc": "0.17.6",
     "worker-loader": "2.0.0"
+  },
+  "resolutions": {
+    "**/minimist": "1.2.5",
+    "**/acorn": "7.1.1",
+    "**/yargs-parser": "13.1.2"
   }
 }
