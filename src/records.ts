@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 export const validRecord = '{\n\
     "parameters": {\n\
       "date": "today",\n\
