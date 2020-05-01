@@ -4,21 +4,8 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "./",
-  "dependencies": {
-    "@types/jest": "25.2.1",
-    "@types/node": "12.12.28",
-    "@types/react": "16.9.22",
-    "@types/react-dom": "16.9.5",
-    "babel-loader": "8.1.0",
-    "babel-plugin-named-asset-import": "0.3.6",
-    "husky": "3.1.0",
-    "juvenal-lib": "https://github.com/nVotes/juvenal-lib.git#master",
-    "lint-staged": "10.0.7",
-    "prettier": "1.19.1",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-scripts": "3.4.1",
-    "typescript": "3.8.2"
+  "bugs": {
+    "url": "https://github.com/nvotes/juvenal/issues"
   },
   "scripts": {
     "start": "react-app-rewired start --verbose",
@@ -57,10 +44,27 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "babel-loader": "8.1.0",
+    "babel-plugin-named-asset-import": "0.3.6",
+    "juvenal-lib": "https://github.com/nvotes/juvenal-lib.git#master",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scripts": "3.4.1"
+  },
   "devDependencies": {
+    "@types/jest": "25.2.1",
+    "@types/node": "13.13.4",
+    "@types/react": "16.9.34",
+    "@types/react-dom": "16.9.7",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.2",
+    "prettier": "2.0.5",
     "react-app-rewired": "2.1.5",
     "typedoc": "0.17.6",
-    "worker-loader": "2.0.0"
+    "typescript": "3.8.3",
+    "worker-loader": "2.0.0",
+    "yarn-deduplicate": "^2.0.0"
   },
   "resolutions": {
     "**/minimist": "1.2.5",
