@@ -57,6 +57,13 @@ There are multiple ways to contribute:
 - Review [source code changes].
 - Use the [discord channel] to engage with the community.
 
+### Security dependencies update
+
+You can run `yarn audit` to find security dependencies that need to be updated.
+You can also run `yarn run yarn-audit-fix` to try to update the dependencies to
+a secure version. Afterwards, you should try to do a `yarn build` and test with
+`yarn start` to ensure everything is still working.
+
 [juvenal-lib]: https://github.com/nVotes/juvenal-lib
 [nVotes]: https://nvotes.com
 [ElectionGuard]: https://github.com/microsoft/electionguard
