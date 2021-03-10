@@ -1,9 +1,9 @@
 # Juvenal: The universal election verifier
 
-[![License](https://img.shields.io/github/license/nVotes/juvenal)](License)
-[![Dependencies badge](https://david-dm.org/nVotes/juvenal.svg)](https://david-dm.org/nVotes/juvenal)
-[![Build](https://github.com/nVotes/juvenal/workflows/build/badge.svg?branch=master)](https://github.com/nVotes/juvenal/actions?query=workflow%3Abuild)
-[![Coverage status](https://img.shields.io/codecov/c/github/nVotes/juvenal)](https://codecov.io/gh/nVotes/juvenal/)
+[![License](https://img.shields.io/github/license/nvotes/juvenal)](License)
+[![Dependencies badge](https://david-dm.org/nvotes/juvenal.svg)](https://david-dm.org/nvotes/juvenal)
+[![Build](https://github.com/nVotes/juvenal/workflows/build/badge.svg?branch=master)](https://github.com/nvotes/juvenal/actions?query=workflow%3Abuild)
+[![Coverage status](https://img.shields.io/codecov/c/github/nVotes/juvenal)](https://codecov.io/gh/nvotes/juvenal/)
 [![Community chat](https://img.shields.io/discord/651538033291690014)](https://discord.gg/dfdnFWJ)
 
 ![Juvenal: The universal election verifier screenshot gif](images/screenshot.gif)
