@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "acorn": "8.1.0",
-    "babel-loader": "8.2.2",
+    "babel-loader": "8.1.0",
     "babel-plugin-named-asset-import": "0.3.7",
     "juvenal-lib": "https://github.com/nvotes/juvenal-lib.git#master",
     "react": "17.0.1",
