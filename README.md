@@ -75,3 +75,4 @@ a secure version. Afterwards, you should try to do a `yarn build` and test with
 [source code changes]: https://github.com/nVotesOrg/juvenal/pulls
 [submit bugs]: https://github.com/nVotes/juvenal/issues
 [Helios Voting]: https://heliosvoting.org/
+
